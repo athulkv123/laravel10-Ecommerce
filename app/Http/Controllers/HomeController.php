@@ -8,6 +8,6 @@ class HomeController extends Controller
 {
     public function index()
     {
-        return (auth()->user()->user_type == 1) ? view('admin.home') : view('dashboard');
+        return (auth()->user()?->user_type == 1) ? view('admin.home') : view('user.userpage');
     }
 }

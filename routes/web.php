@@ -14,9 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [HomeController::class, 'index'])->name("starter");
+
 
 Route::middleware([
     'auth:sanctum',
@@ -28,4 +27,4 @@ Route::middleware([
     })->name('dashboard');
 });
 
-Route::get('/redirect',[HomeController::class,'index'])->name("login.redirect");
+Route::get('/home', [HomeController::class, 'index'])->name("login.redirect");
