@@ -10,4 +10,8 @@ class HomeController extends Controller
     {
         return (auth()->user()?->user_type == 1) ? view('admin.home') : view('user.userpage');
     }
+    public function dashboard()
+    {
+        return view('user.userpage');
+    }
 }
