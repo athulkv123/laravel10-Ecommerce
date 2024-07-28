@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [HomeController::class, 'dashboard'])->name("login.redirect");
-Route::get('dashboard', [HomeController::class, 'index'])->name("admin.dashboard");
+Route::get('/dashboard', [HomeController::class, 'index'])->name("dashboard");
 
 
 // Route::middleware([
