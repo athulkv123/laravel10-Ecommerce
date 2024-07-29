@@ -1,8 +1,25 @@
     <!-- partial:partials/_footer.html -->
-    <footer class="footer">
-      <div class="d-sm-flex justify-content-center justify-content-sm-between">
-        <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © bootstrapdash.com 2020</span>
-        <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Free <a href="https://www.bootstrapdash.com/bootstrap-admin-template/" target="_blank">Bootstrap admin templates</a> from Bootstrapdash.com</span>
+    <div class="d-flex flex-column min-vh-100">
+      <div class="flex-grow-1">
+        <!-- Main content goes here -->
       </div>
-    </footer>
+      <footer class="footer">
+        <div class="d-flex justify-content-center">
+          <span class="d-block text-center">
+           Powered By  <a href="https://athulkv96.com/" target="_blank">Athul kv</a>
+          </span>
+        </div>
+      </footer>
+    </div>
+    
     <!-- partial -->
+    <style>
+  html, body {
+  height: 100%;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+</style>

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
@@ -16,6 +17,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, 'dashboard'])->name("login.redirect");
 Route::get('/dashboard', [HomeController::class, 'index'])->name("dashboard");
+Route::get('/view_category', [AdminController::class, 'viewCategory'])->name("view.category");
+
 
 
 // Route::middleware([
